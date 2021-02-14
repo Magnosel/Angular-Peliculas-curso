@@ -9,7 +9,7 @@ export class ListadoGenericoComponent implements OnInit {
 
 
   @Input()
-  listado: any;
+  listado;
   constructor() { }
 
   ngOnInit(): void {
