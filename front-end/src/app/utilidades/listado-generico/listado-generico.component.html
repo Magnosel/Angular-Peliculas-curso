@@ -1,0 +1,12 @@
+
+<div *ngIf= "!listado">
+    <img src="https://i0.wp.com/static.onemansblog.com/wp-content/uploads/2016/05/Boobs-Loading.gif">
+  </div>
+  
+  <div *ngIf= "listado?.length === 0">
+    <p>No hay películas para mostrar</p>
+  </div>
+  
+  <ng-container *ngIf= "listado && listado?.length > 0">
+    <ng-content select="[contenido]"></ng-content>  
+  </ng-container>
